@@ -1,0 +1,44 @@
+[2024-06-01 05:44:19] local.ERROR: Error: config/permission.php not loaded. Run [php artisan config:clear] and try again. {"exception":"[object] (Exception(code: 0): Error: config/permission.php not loaded. Run [php artisan config:clear] and try again. at C:\\Users\\Christa\\Stores_1.0\\database\\migrations\\2024_05_31_180626_create_permissions_table.php:21)
+[stacktrace]
+#0 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(493): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#1 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->runMethod(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#2 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(419): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#3 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(Illuminate\\Database\\Migrations\\Migration@anonymous), 'up')
+#4 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(37): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#5 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(756): Illuminate\\Console\\View\\Components\\Task->render('2024_05_31_1806...', Object(Closure))
+#6 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->write('Illuminate\\\\Cons...', '2024_05_31_1806...', Object(Closure))
+#7 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(181): Illuminate\\Database\\Migrations\\Migrator->runUp('C:\\\\Users\\\\Christ...', 1, false)
+#8 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(124): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#9 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(92): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#10 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#11 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(104): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#12 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#18 C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(181): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\Users\\Christa\\Stores_1.0\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 {main}
+"} 
+[2024-06-01 06:54:27] local.ERROR: There are no commands defined in the "key:" namespace.
+
+Did you mean this?
+    key {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"key:\" namespace.
+
+Did you mean this?
+    key at C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Application.php:669)
+[stacktrace]
+#0 C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Application.php(720): Symfony\\Component\\Console\\Application->findNamespace('key:')
+#1 C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find('key::generate')
+#2 C:\\Users\\Christa\\Stores_1.0\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Christa\\Stores_1.0\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\Christa\\Stores_1.0\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
